@@ -111,3 +111,21 @@ console.log(newPossArray([-1, -9, -16, -12, 100]))
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+// Create a function which returns the number of true values there are in an array.
+// Examples
+// countTrue([true, false, false, true, false]) ➞ 2
+//
+// countTrue([false, false, false, false]) ➞ 0
+//
+// countTrue([]) ➞ 0
+
+function countTrue(array){
+  let count = 0;
+  for (let element of array) {
+  count += element === true;
+  }
+  return count;
+}
+console.log(`The count is: ${countTrue([true, false, false, true, false])}`);
+console.log(`The count is: ${countTrue([false, false, false, false])}`);
