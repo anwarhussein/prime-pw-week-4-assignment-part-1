@@ -60,9 +60,10 @@ console.log(`Returning the last element in an empty array: ${getLast([])}`);
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
- for(let element of array){
-   if(value === element)
+ for (let element of array) {
+   if (element === value) {
      return true;
+   }
  }
  return false;
 }
@@ -106,8 +107,8 @@ function newPossArray(array){
   }
     return newArr;
 }
-console.log(newPossArray([1, 9, 16, 12, 100]))
-console.log(newPossArray([-1, -9, -16, -12, 100]))
+console.log(newPossArray([1, 9, 16, -12, 100]))
+console.log(newPossArray([-1, -9, -16, -12, -100]))
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
